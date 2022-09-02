@@ -2,20 +2,19 @@
 
 ## Requisitos Funcionais
 
-### RF 01
+### RF 01 - O sistema deverá ter os seguintes campos:Nome, Email, Senha, Data de Nascimento.  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nulla vel diam vehicula, eu porttitor nulla aliquam.
+### RF 02 - O sistema deverá amarzenar os registos de login:Nome,Email,Senha,Data de Nascimento.
 
-### RF 02
+### RF 03 - O sistema ser capaz de possibilitar o usuário que os curtam postagens. 
 
-Nullam laoreet, mauris ac tempor vulputate, orci metus aliquet augue, at accumsan odio mi eu sapien. Aliquam tincidunt metus ut aliquet vehicula. Aliquam vitae arcu sed lacus fermentum sagittis.
+### RF 04 - O sistema deverá possui uma ferramente de busca de perfil de usúario. 
+
 
 ## Requisitos Não-Funcionais
 
-### RNF 01
+### RNF 01 - O sistema só deverá ser desenvolvido para plataformar web.
 
-Nulla facilisi. Etiam tempus dolor et odio tincidunt fermentum. Donec pharetra nulla eu euismod maximus. Maecenas eu mauris tincidunt, pulvinar tellus sed, blandit eros.
+### RNF 02 - Será utilizado a linguagem:PHP,CSS,HTML,JAVASCRIT.
 
-### RNF 02
-
-Nam id enim ut quam faucibus scelerisque at non diam. Morbi eget eleifend lectus, quis fringilla elit. Morbi iaculis, elit vel accumsan hendrerit, ipsum purus varius lacus, eget facilisis massa mauris ac ipsum.
+### RNF 03 - O sistema deverá registrar  as informações em um banco de daos MYSQL.
