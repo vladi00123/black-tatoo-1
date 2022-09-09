@@ -6,9 +6,7 @@
 
 ### RF 02 - O sistema deverá amarzenar os registos de login:Nome,Email,Senha,Data de Nascimento.
 
-### RF 03 - O sistema ser capaz de possibilitar o usuário que os curtam postagens. 
-
-### RF 04 - O sistema deverá possui uma ferramente de busca de perfil de usúario. 
+### RF 03 - O sistema deverá possui uma ferramente de busca de perfil de usúario. 
 
 
 ## Requisitos Não-Funcionais
