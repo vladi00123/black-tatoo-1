@@ -2,10 +2,11 @@
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): Quisque id neque a erat imperdiet dictum et ut mauris.
- - [CDU 02](#CDU-02): Morbi fringilla dolor at mattis vestibulum.
- - [CDU 03](#CDU-03): Duis nec orci quis velit faucibus hendrerit tempus vel libero.
-
+ - [CDU 01](#CDU-01):O usuário deverá se cadastrar utilizando o e-mail
+ - [CDU 02](#CDU-02):O usuário deve inserir a senha 
+ - [CDU 03](#CDU-03):O usuário deve inserir a idade 
+ - [CDU 03](#CDU-04):O usuário poderá navegar pela galeria sem fazer cadastro 
+ - [CDU 03](#CDU-05): para agendamento o usuário deverá ser maior de idade 
 
 ## Lista dos Atores
 
