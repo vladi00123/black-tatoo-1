@@ -3,10 +3,9 @@
 ## Lista dos Casos de Uso
 
  - [CDU 01](#CDU-01):O usuário deverá se cadastrar utilizando o e-mail
- - [CDU 02](#CDU-02):O usuário deve inserir a senha 
- - [CDU 03](#CDU-03):O usuário deve inserir a idade 
- - [CDU 03](#CDU-04):O usuário poderá navegar pela galeria sem fazer cadastro 
- - [CDU 03](#CDU-05): para agendamento o usuário deverá ser maior de idade 
+ - [CDU 02](#CDU-02):O usuário deve inserir a senha  
+ - [CDU 03](#CDU-03):O usuário poderá navegar pela galeria sem fazer cadastro 
+ - [CDU 03](#CDU-04): para agendamento o usuário deverá ser maior de idade 
 
 ## Lista dos Atores
 
