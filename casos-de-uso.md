@@ -6,6 +6,9 @@
  - [CDU 02](#CDU-02): O usuário deve inserir a senha  
  - [CDU 03](#CDU-03): O usuário poderá navegar pela galeria sem fazer cadastro 
  - [CDU 03](#CDU-04): O usuário poderá fazer agendamento se for maior de idade 
+ - - [CDU 03](#CDU-05):
+ - - [CDU 03](#CDU-06):
+ - - [CDU 03](#CDU-07):
 
 ## Lista dos Atores
 
