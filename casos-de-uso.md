@@ -4,11 +4,11 @@
 
  - [CDU 01](#CDU-01): O usuário deverá se cadastrar utilizando o e-mail
  - [CDU 02](#CDU-02): O usuário deve inserir a senha  
- - [CDU 03](#CDU-03): O usuário poderá navegar pela galeria sem fazer cadastro 
+ - [CDU 03](#CDU-03): O usuário poderá visualizar o catálogo sem fazer cadastro 
  - [CDU 04](#CDU-04): O usuário poderá fazer agendamento se for maior de idade 
- - [CDU 05](#CDU-05):
- - [CDU 06](#CDU-06):
- - [CDU 07](#CDU-07):
+ - [CDU 05](#CDU-05): O usuário poderá marcar horário após o agendamento
+ - [CDU 06](#CDU-06): O usuário poderá entrar em contato após se cadastrar
+ - [CDU 07](#CDU-07): 
 
 ## Lista dos Atores
 
