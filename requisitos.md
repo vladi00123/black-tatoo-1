@@ -2,7 +2,7 @@
 
 ## Requisitos Funcionais
 
-### RF 01 - O sistema só pode ser editado pelo ADM.
+### RF 01 - O sistema efetuar login.
 
 ### RF 02 - O sistema deverá ser capaz de armazenar nome, email e senha.
 
@@ -10,7 +10,7 @@
 
 ### RF 04 - O sistema deverá ter uma tabela de agendamento.
 
-### RF 05 - O sistema deverá 
+### RF 05 - O sistema deverá cadastrar, excluir, editar e visualizar produtos
 
 
 ## Requisitos Não-Funcionais
