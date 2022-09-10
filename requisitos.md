@@ -2,11 +2,15 @@
 
 ## Requisitos Funcionais
 
-### RF 01 - O sistema deverá ter os seguintes campos:Nome, Email, Senha, Data de Nascimento.  
+### RF 01 - O sistema só pode ser editado pelo ADM.
 
-### RF 02 - O sistema deverá amarzenar os registos de login:Nome, Email, Senha, Data de Nascimento.
+### RF 02 - O sistema deverá ser capaz de armazenar nome, email e senha.
 
 ### RF 03 - O sistema deverá possuir uma ferramente de busca de perfil de usúario. 
+
+### RF 04 - O sistema deverá ter uma tabela de agendamento.
+
+### RF 05 - O sistema deverá 
 
 
 ## Requisitos Não-Funcionais
