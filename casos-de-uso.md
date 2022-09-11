@@ -24,12 +24,14 @@
 
 ### CDU 01 Cadastro
 
-Cadastro de usuário.
+Cadastro de usuário
 
 **Fluxo Principal**
 
-O usuário poderá se cadastrar utilizando o email.
-
+1. O usuário deverá inserir nome, email e senha nos campos visíveis do sistema. 
+2. O usuário aperta no botão de "Cadastrar".
+3. O sistema irá armazenar os dados e informará que o usuário foi criado com sucesso. 
+4. O sistema volta para a tela inicial para criar novo usuário.
 
 **Fluxo Alternativo A**
 
@@ -65,7 +67,11 @@ Visualização de catálogo.
 
 **Fluxo Principal**
 
-O usuário poderá visualizar o catálogo sem estar logado.
+1. O usuário insere email e senha nos campos visíveis.
+2. O usuário clica em "Enviar".
+3. O sistema mostra um texto de "Bem Vindo" e redireciona o usuário para a tela inicial do site.
+4. O usuário clica na aba do "Catálogo".
+5. O usuário terá acesso ao catálogo de tatuagens.
 
 **Fluxo Alternativo A**
 
@@ -81,8 +87,13 @@ Agendamento de tatuagem.
 
 **Fluxo Principal**
 
-O usuário deverá inserir sua data de nascimento, se for maior de idade, poderá fazer agendamento.
-O usuário deverá fazer update de um documento em seu nome que comprove sua maioridade.
+1. O usuário já logado no sistema clica em "Agendamento".
+2. O usuário é redirecionado para uma página onde deve inserir sua data de nascimento.
+3. O usuário clica em "Enviar". 
+4. O sistema redireciona o usuário para uma dela de calendário.
+5. O usuário escolhe uma data.
+6. O usuário clica em "Enviar". 
+7. O sistema exibe a mensagem "Agendamento feito com sucesso".
 
 **Fluxo Alternativo A**
 
