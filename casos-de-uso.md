@@ -1,3 +1,4 @@
+
 # Documento de Casos de Uso
 
 ## Lista dos Casos de Uso
@@ -58,20 +59,45 @@ Morbi fringilla dolor at mattis vestibulum.
 4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
 5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
 
-### CDU 03
+### CDU 03 Visualização 
 
-Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+Visualização de catálogo.
 
 **Fluxo Principal**
 
-1. Praesent interdum lectus sit amet augue tincidunt imperdiet.
-2. Duis ac dolor vel nisi imperdiet vehicula et non sem.
-3. Nunc imperdiet tortor consequat, lobortis purus non, interdum risus.
+O usuário poderá visualizar o catálogo sem estar logado.
 
 **Fluxo Alternativo A**
 
-1. Aliquam efficitur arcu ac fermentum egestas.
-2. Pellentesque ac diam vitae erat bibendum hendrerit.
-3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
-4. Aenean ullamcorper tellus quis nibh porttitor congue.
-5. Phasellus laoreet erat eget condimentum dictum.
+O usuário poderá visualizar o catálogo estando logado.
+
+**Fluxo Alternativo B**
+
+O usuário poderá ver o catálogo em qualquer circunstância.
+
+### CDU 04 Agendamento
+
+Agendamento de tatuagem.
+
+**Fluxo Principal**
+
+O usuário deverá inserir sua data de nascimento, se for maior de idade, poderá fazer agendamento.
+O usuário deverá fazer update de um documento em seu nome que comprove sua maioridade.
+
+**Fluxo Alternativo A**
+
+Caso o usuário insira sua data de nascimento e não apresente a documentação necessária, não poderá fazer agendamento.
+
+**Fluxo Alternativo B**
+
+O usuário menor de idade poderá fazer agendamento caso seu responsável entre em contato com o estúdio de tatuagem.
+O responsável do menor de idade deverá apresentar comprovante de que é realmente o responsável por aquela pessoa.
+
+## CDU 05 Agendamento de horário.
+
+Agendamento de sessão de tatuagem.
+
+**Fluxo Principal**
+
+
+
