@@ -17,7 +17,7 @@
 
 ## Diagrama de Casos de Uso
 
-[Diagrama de Casos de Uso](diag.png)
+[Diagrama de Casos de Uso](/src/diag.png)
 
 ## Descrição dos Casos de Uso
 
