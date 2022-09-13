@@ -1,114 +1,67 @@
-
 # Documento de Casos de Uso
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): O usuário deverá se cadastrar utilizando o e-mail
- - [CDU 02](#CDU-02): O usuário deve inserir a senha  
- - [CDU 03](#CDU-03): O usuário poderá visualizar o catálogo sem fazer cadastro 
- - [CDU 04](#CDU-04): O usuário poderá fazer agendamento se for maior de idade 
- - [CDU 05](#CDU-05): O usuário poderá marcar horário após o agendamento
- - [CDU 06](#CDU-06): O usuário poderá entrar em contato após se cadastrar
- - [CDU 07](#CDU-07): 
+ - [CDU 01](#CDU-01): Cadastrar cliente;
+ - [CDU 02](#CDU-02): Marcar agendamento;
+ - [CDU 03](#CDU-03): Listar clientes agendados;
+ - [CDU 04](#CDU-04): Visualizar agendamento;
+ - [CDU 05](#CDU-05): Cancelar agendamento;
 
+ 
 ## Lista dos Atores
 
- - Cras tempor
- - Donec a lorem
+ - Cliente;
+ - Profissional; 
+ - Administrador;
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](diagrama-exemplo.png)
+![Diagrama de Casos de Uso](diag.png)
 
 ## Descrição dos Casos de Uso
 
-### CDU 01 Cadastro
-
-Cadastro de usuário
+### CDU 01 Cadastrar cliente
 
 **Fluxo Principal**
 
-1. O usuário deverá inserir nome, email e senha nos campos visíveis do sistema. 
-2. O usuário aperta no botão de "Cadastrar".
-3. O sistema irá armazenar os dados e informará que o usuário foi criado com sucesso. 
-4. O sistema volta para a tela inicial para criar novo usuário.
+1. O sistema possuirá uma tela de cadastro com um formulário
+2. O cliente irá inserir os dados no formulário(nome , e-mail e senha).
+3. O cliente irá enviar os dados para o sistema clicando no botão "Enviar".
+4. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!". 
 
-**Fluxo Alternativo A**
+ ### CDU 02 Marcar agendamento  
 
-O usuário poderá se cadastrar utilizando o número de celular.
+ **Fluxo Principal**
 
+1. O sistema exibirá os horários e os profissionais disponíveis.
+2. O Cliente irá escolher o horário e profissional de sua preferência. 
+3. O cliente irá cilcar em "Agendar".
+4. O cliente será redirecionado para outra página com o aviso "Agendamento efetuado!". 
 
-**Fluxo Alternativo B**
-
-O usuário poderá se cadastrar utilizando nome de usuário.
-
-### CDU 02
-
-Morbi fringilla dolor at mattis vestibulum.
+### CDU 03 Listar clientes agendados
 
 **Fluxo Principal**
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Mauris varius massa ac fermentum scelerisque.
-3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
-4. Mauris egestas leo a suscipit feugiat.
+1. O administrador possuirá uma interface própria.
+2. Nessa interface possuirá um botão "clientes".
+3. O administrador clica nesse botão e será redirecionado para outra página.
+4. Essa página possuirá todos clientes cadastrados.
 
-**Fluxo Alternativo A**
-
-1. Nulla elementum diam eu elementum rutrum.
-2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
-3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
-4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
-5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
-
-### CDU 03 Visualização 
-
-Visualização de catálogo.
+### CDU 04 Visualizar agendamento
 
 **Fluxo Principal**
 
-1. O usuário insere email e senha nos campos visíveis.
-2. O usuário clica em "Enviar".
-3. O sistema mostra um texto de "Bem Vindo" e redireciona o usuário para a tela inicial do site.
-4. O usuário clica na aba do "Catálogo".
-5. O usuário terá acesso ao catálogo de tatuagens.
+1. O administrador e o funcionário poderão ver os agendamentos feitos pelos clientes.
+2. Na interface do administrador terá um botão "agendamentos" ao clicar ele será redirecionado para outra página.
+3. Essa página terá registros de todos os agendamentos feitos pelo sistema.
+4. Na interface do profissional terá um botão "meus agendamentos" ao clicar ele será redirecionado para outra página.
+5. Essa página terá as datas e os hórarios que o profissinal terá que atender.
 
-**Fluxo Alternativo A**
-
-O usuário poderá visualizar o catálogo estando logado.
-
-**Fluxo Alternativo B**
-
-O usuário poderá ver o catálogo em qualquer circunstância.
-
-### CDU 04 Agendamento
-
-Agendamento de tatuagem.
+### CDU 05 Cancelar agendamento
 
 **Fluxo Principal**
-
-1. O usuário já logado no sistema clica em "Agendamento".
-2. O usuário é redirecionado para uma página onde deve inserir sua data de nascimento.
-3. O usuário clica em "Enviar". 
-4. O sistema redireciona o usuário para uma dela de calendário.
-5. O usuário escolhe uma data.
-6. O usuário clica em "Enviar". 
-7. O sistema exibe a mensagem "Agendamento feito com sucesso".
-
-**Fluxo Alternativo A**
-
-Caso o usuário insira sua data de nascimento e não apresente a documentação necessária, não poderá fazer agendamento.
-
-**Fluxo Alternativo B**
-
-O usuário menor de idade poderá fazer agendamento caso seu responsável entre em contato com o estúdio de tatuagem.
-O responsável do menor de idade deverá apresentar comprovante de que é realmente o responsável por aquela pessoa.
-
-## CDU 05 Agendamento de horário.
-
-Agendamento de sessão de tatuagem.
-
-**Fluxo Principal**
-
-
-
+1. Na interface do administrador terá a página "agendamentos" .
+2. Dentro da página "agendamentos" cada agendamento que ainda não teve seu serviço prestado terá o botão "cancelar". 
+3. O administrador clicará no botão "cancelar" e uma mensagem "Gostaria de cancelar esse agendamendo?" será exibida.
+4. O administrador clicará em "sim" e a mensagem "cancelamento feito com sucesso!!"
