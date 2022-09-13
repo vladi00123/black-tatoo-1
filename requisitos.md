@@ -6,11 +6,10 @@
 
 ### RF 02 - O sistema deverá ser capaz de armazenar nome, email e senha.
 
-### RF 03 - O sistema deverá possuir uma ferramente de busca de perfil de usúario. 
+### RF 03 -O sistema deverá ter uma tabela de agendamento.
 
-### RF 04 - O sistema deverá ter uma tabela de agendamento.
+### RF 04 - O sistema deverá cadastrar, excluir, editar e visualizar produtos.
 
-### RF 05 - O sistema deverá cadastrar, excluir, editar e visualizar produtos
 
 
 ## Requisitos Não-Funcionais
