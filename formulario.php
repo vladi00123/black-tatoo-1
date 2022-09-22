@@ -1,5 +1,4 @@
 <?php
-
     if(isset($_POST['submit']))
     {
         // print_r('Nome: ' . $_POST['nome']);
@@ -47,28 +46,29 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background-color: black;
         }
         .box{
-            color: white;
+            color: black;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: WHITE;
             padding: 15px;
             border-radius: 15px;
             width: 20%;
         }
         fieldset{
-            border: 3px solid dodgerblue;
+            border: 3px solid black;
         }
         legend{
-            border: 1px solid dodgerblue;
+            border: 1px solid black;
             padding: 10px;
             text-align: center;
-            background-color: dodgerblue;
+            background-color: black;
             border-radius: 8px;
+            color : white;
         }
         .inputBox{
             position: relative;
@@ -76,9 +76,9 @@
         .inputUser{
             background: none;
             border: none;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid black;
             outline: none;
-            color: white;
+            color: black;
             font-size: 15px;
             width: 100%;
             letter-spacing: 2px;
@@ -94,7 +94,7 @@
         .inputUser:valid ~ .labelInput{
             top: -20px;
             font-size: 12px;
-            color: dodgerblue;
+            color: black;
         }
         #data_nascimento{
             border: none;
@@ -104,7 +104,7 @@
             font-size: 15px;
         }
         #submit{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            background-color: black;
             width: 100%;
             border: none;
             padding: 15px;
@@ -116,10 +116,21 @@
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
+        .btm {
+            background-color: black;
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+
+        }
     </style>
 </head>
 <body>
-    <a href="home.php">Voltar</a>
+    <a href="home.php" class="btm">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
