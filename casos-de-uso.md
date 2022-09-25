@@ -4,7 +4,7 @@
 
  - [CDU 01](#CDU-01): Cadastrar cliente;
  - [CDU 02](#CDU-02): Marcar agendamento;
- - [CDU 03](#CDU-03): Listar clientes agendados;
+ - [CDU 03](#CDU-03): Listar clientes cadastrados;
  - [CDU 04](#CDU-04): Visualizar agendamento;
  - [CDU 05](#CDU-05): Cancelar agendamento;
 
@@ -25,21 +25,41 @@
 
 **Fluxo Principal**
 
-1. O sistema possuirá uma tela de cadastro com um formulário
-2. O cliente irá inserir os dados no formulário(nome , e-mail e senha).
+1. O sistema possuirá uma tela de cadastro com um formulário.
+2. O cliente irá inserir os dados no formulário (nome, e-mail e senha).
 3. O cliente irá enviar os dados para o sistema clicando no botão "Enviar".
 4. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!". 
+
+**Fluxo Alternativo**
+
+1. O sistema possuirá uma tela de cadastro com um formulário.
+2. O cliente irá inserir os dados no formulário (nome, e-mail e senha).
+4. O cliente irá enviar os dados para o sistema clicando no botão "Enviar".
+5. O sistema informará ao cliente que o email e senha estão inválidos.
+6. O cliente digitará corretamente email e senha.
+7. O cliente clica em "Enviar".
+8. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!".
 
  ### CDU 02 Marcar agendamento  
 
  **Fluxo Principal**
 
 1. O sistema exibirá os horários e os profissionais disponíveis.
-2. O Cliente irá escolher o horário e profissional de sua preferência. 
+2. O cliente irá escolher o horário e profissional de sua preferência. 
 3. O cliente irá cilcar em "Agendar".
 4. O cliente será redirecionado para outra página com o aviso "Agendamento efetuado!". 
 
-### CDU 03 Listar clientes agendados
+**Fluxo Alternativo**
+
+1. O sistema exibirá os horários e os profissionais.
+2. O cliente irá escolher o horário e profissional de sua preferência. 
+3. O cliente irá clicar em "Agendar".
+4. O sistema informará que o profissional não está disponivel.
+5. O cliente escolherá outro profissional.
+6. O cliente irá clicar em "Agendar".
+7. O cliente será redirecionado para outra página com o aviso "Agendamento efetuado!". 
+
+### CDU 03 Listar clientes cadastrados
 
 **Fluxo Principal**
 
@@ -47,6 +67,14 @@
 2. Nessa interface possuirá um botão "clientes".
 3. O administrador clica nesse botão e será redirecionado para outra página.
 4. Essa página possuirá todos clientes cadastrados.
+5. O administrador poderá excluir cadastros.
+
+**Fluxo Alternativo**
+
+1. O administrador clica no botão "clientes".
+2. O administrador seleciona um cliente.
+3. O administrador tentará excluir o cadastro.
+4. Será exibido a mensagem de que o cadastro foi cancelado.
 
 ### CDU 04 Visualizar agendamento
 
