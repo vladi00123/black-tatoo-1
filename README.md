@@ -26,4 +26,4 @@ O programa tem como objetivo agendar
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados](diagrama-exemplo.png)
+![Diagrama de Banco de Dados](diag-bd.png)
