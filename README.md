@@ -25,7 +25,7 @@ O programa tem como objetivo agendar
 ![Diagrama de Classes](Fluxo-alternativo-cliente.png)
 ![Diagrama de Classes](Fluxo-principal-Cliente.png)
 ![Diagrama de Classes](Fluxo-principal-funcionario.png)
-![Diagrama de Classes](Fluxo-alternativo-funcionario.png)
+![Diagrama de Classes](fluxo-alternativo-funcionario.png)
 
 **Modelagem do Banco de Dados**
 
