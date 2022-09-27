@@ -1,3 +1,6 @@
+<?php
+    include_once("conexao.php");
+?>
 <html>
     <head>
         <title>Dados Cadastrados</title>
@@ -13,12 +16,7 @@
     $nome = $_POST["nome"]; 
     $senha = $_POST["senha"];
     $email = $_POST["email"];
-    $telefone = $_POST["telefone"];
-    $sexo = $_POST["sexo"];
-    $data_nasc = $_POST["data_nasc"];
-    $cidade = $_POST["cidade"];
-    $estado = $_POST["estado"];
-    $endereco = $_POST["endereco"];
+    $data_nasc = $_POST["data_nascimento"];
     $erro = 0;
 
     if(empty($nome) or strstr($nome, ' ') == false){
@@ -31,43 +29,24 @@
         $erro = 1;
     }
 
-    if(strlen($email) < 10 or strstr($email, '@') == false){
-        echo "Por favor, preencha o e-mail corretamente.<br>";
-        $erro = 1;
-    }
-
-    if(empty($telefone) < 10 or strstr($telefone, ' ') == false){
-        echo "Por favor, preencha o e-mail corretamente.<br>";
-        $erro = 1;
-    }
-
     if(empty($data_nasc)){
         echo "Por favor, preencha a data.<br>";
         $erro = 1;
     }
 
-    if(empty($bandeiraCartao)){
-        echo "Por favor, escolha uma bandeira do cartão de crédito.<br>";
-        $erro = 1;
-    }
-
     if($erro == 0){
-        $mysqli = mysqli_connect("localhost","estudante","123","ds302");
-        $sql = "INSERT INTO cliente (nome,email,data_nasc,cartao)";
-        $sql .= "VALUES ('$nome','$email','$data_nasc', '$bandeiraCartao');";  
-        mysqli_query($mysqli,$sql);
-        mysqli_close($mysqli);
+            $sql = "INSERT INTO cliente (nome,email,senha,data_nasc)";
+            $sql .= "VALUES ('$nome','$email','$senha','$data_nascimento');";  
+            mysqli_query($mysqli,$sql);
 
-        echo "Nome: $nome <br>";
-        echo "E-mail: $email <br>";
-        echo "Data de nascimento: $data_nasc <br>";
-        echo "Bandeira do cartão de crédtio: $bandeiraCartao <br>"; 
+            header("location: inicio.php");
+
     }
     }
 
     elseif($operacao == "exibir"){
         
-        $mysqli = mysqli_connect("localhost","estudante","123","ds302");
+        $mysqli = mysqli_connect("localhost","email","senha","data_nasc");
         $sql = "SELECT * FROM cliente;";
         $res = mysqli_query($mysqli,$sql);
         $linhas = mysqli_num_rows($res);
@@ -76,7 +55,6 @@
         echo "Nome: ".$cliente["nome"]." <br>";
         echo "E-mail: ".$cliente["email"]." <br>";
         echo "Data de nascimento: ".$cliente["data_nasc"]."<br>";
-        echo "Bandeira do cartão: ".$cliente["cartao"]."<br>";
         echo "----------------------------------"."<br>";
         }
         mysqli_close($mysqli);
@@ -84,7 +62,7 @@
     }
     elseif($operacao == "buscar"){
         
-        $mysqli = mysqli_connect("localhost","estudante","123","ds302");
+        $mysqli = mysqli_connect("localhost","email","senha","data_nasc");
         $nome = $_POST["nome"];
         $sql = "SELECT * FROM cliente WHERE nome LIKE '%$nome%';";
         $res = mysqli_query($mysqli,$sql);
@@ -94,7 +72,6 @@
         echo "Nome: ".$cliente["nome"]." <br>";
         echo "E-mail: ".$cliente["email"]." <br>";
         echo "Data de nascimento: ".$cliente["data_nasc"]."<br>";
-        echo "Bandeira do cartão: ".$cliente["cartao"]."<br>";
         echo "----------------------------------"."<br>";
         }
         mysqli_close($mysqli);
