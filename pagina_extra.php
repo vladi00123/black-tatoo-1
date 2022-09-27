@@ -23,6 +23,11 @@
         echo "Por favor, preencha o nome completo.<br>";
         $erro = 1;
     }
+    
+     if(empty($email) < 8 or strstr($email, '@') == false){
+    echo "Por favor, preencha o e-mail corretamente.<br>";
+    $erro = 1;
+    }
 
     if(empty($senha) < 8 or strstr($senha, '@') == false){
         echo "Por favor, preencha o e-mail corretamente.<br>";
