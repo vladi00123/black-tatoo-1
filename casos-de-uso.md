@@ -17,7 +17,9 @@
 
 ## Diagrama de Casos de Uso
 
-[Diagrama de Casos de Uso](Diagrama-de-caso-de-uso.pdf)
+[Diagrama de Casos de Uso] ![image](https://user-images.githubusercontent.com/111150590/193352896-cd5d25e6-1303-4cf3-b7c4-5523768fc09f.png)
+
+
 
 ## Descrição dos Casos de Uso
 
