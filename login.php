@@ -1,3 +1,7 @@
+<?php
+  include "conexao.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,7 +96,6 @@ input{
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
-
 }
 </style>
 </head>
@@ -100,7 +103,7 @@ input{
     <a href="index.php"class="btm">Voltar</a>
     <div>
         <h1>Login</h1>
-        <form action="testLogin.php" method="POST">
+        <form action="Login 2.php" method="POST">
             <input type="text" name="email" placeholder="Email">
             <br><br>
             <input type="password" name="senha" placeholder="Senha">

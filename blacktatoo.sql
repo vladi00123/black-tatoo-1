@@ -7,10 +7,10 @@
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
-CREATE Database if NOT EXISTS blacktatoo DEFAULT character set latin1 collate latin1_swedish_c1;
+CREATE Database if NOT EXISTS blacktatoo;
 USE blacktatoo;
-DROP USER if EXISTS 'tatoo'@'localhost'
-CREATE USER 'tatoo'@'localhost' IDENTIFIED BY 'admin';
+DROP USER IF EXISTS 'tatoo'@'localhost';
+CREATE USER 'tatoo'@'localhost' IDENTIFIED BY '123';
 GRANT ALL PRIVILEGES on  blacktatoo.* TO 'tatoo'@'localhost';
 
 
