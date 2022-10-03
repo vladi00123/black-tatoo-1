@@ -87,7 +87,6 @@
             font-size: 15px;
             cursor: pointer;
             border-radius: 10px;
-
         }
     </style>
 </head>
@@ -107,6 +106,11 @@
                 <div class="inputBox">
                     <input type="password" name="senha" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="password" name="senha_rep" id="senha_rep" class="inputUser" required>
+                    <label for="senha_rep" class="labelInput">Repetir a Senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
