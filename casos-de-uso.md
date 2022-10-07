@@ -7,8 +7,8 @@
  - [CDU 03](#CDU-03): Listar clientes cadastrados;
  - [CDU 04](#CDU-04): Visualizar agendamento;
  - [CDU 05](#CDU-05): Cancelar agendamento;
- - [CDU 05](#CDU-06): Listar clientes.
- - [CDU 05](#CDU-07): Excluir cliente.
+ - [CDU 06](#CDU-06): Listar clientes.
+ - [CDU 07](#CDU-07): Excluir cliente.
 
  
 ## Lista dos Atores
