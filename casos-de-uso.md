@@ -110,4 +110,14 @@
 
 **Fluxo principal**
 
-1.
+1. Na interface do administrador terá a página "Clientes".
+2. Dentro da página "Clientes" terá o botão "excluir". 
+3. O administrador clicará no botão "excluir" e uma mensagem de "Gostaria de excluir esse cliente?" será exibida.
+4. O administrador clicará em "sim" e excluirá o cliente. 
+
+**Fluxo alternativo**
+
+1. Na interface do administrador terá a página "Clientes".
+2. Dentro da página "Clientes" terá o botão "excluir". 
+3. O administrador clicará no botão "excluir" e uma mensagem de "Gostaria de excluir esse cliente?" será exibida.
+4. O administrador clicará em "não" e não excluirá o cliente. 
