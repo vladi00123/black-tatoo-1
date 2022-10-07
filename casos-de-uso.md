@@ -7,6 +7,8 @@
  - [CDU 03](#CDU-03): Listar clientes cadastrados;
  - [CDU 04](#CDU-04): Visualizar agendamento;
  - [CDU 05](#CDU-05): Cancelar agendamento;
+ - [CDU 05](#CDU-06): Listar clientes.
+ - [CDU 05](#CDU-07): Excluir cliente.
 
  
 ## Lista dos Atores
@@ -95,3 +97,17 @@
 2. Dentro da página "agendamentos" cada agendamento que ainda não teve seu serviço prestado terá o botão "cancelar". 
 3. O administrador clicará no botão "cancelar" e uma mensagem "Gostaria de cancelar esse agendamendo?" será exibida.
 4. O administrador clicará em "sim" e a mensagem "cancelamento feito com sucesso!!"
+
+### CDU 06 Listar cliente
+
+**Fluxo principal**
+
+1. 
+
+
+
+### CDU 07 Excluir cliente 
+
+**Fluxo principal**
+
+1.
