@@ -20,7 +20,7 @@
 
 ## Diagrama de Casos de Uso
 
-[Diagrama de Casos de Uso] ![image](https://user-images.githubusercontent.com/111150590/193352896-cd5d25e6-1303-4cf3-b7c4-5523768fc09f.png)
+![Diagrama de Casos de Uso](https://user-images.githubusercontent.com/111150590/193352896-cd5d25e6-1303-4cf3-b7c4-5523768fc09f.png)
 
 
 
@@ -35,7 +35,7 @@
 3. O cliente irá enviar os dados para o sistema clicando no botão "Enviar".
 4. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!". 
 
-[Diagrama de Casos de Uso] ![image](Fluxo-principal-Cliente.png)
+![Diagrama de Casos de Uso](Fluxo-principal-Cliente.png)
 
 
 **Fluxo Alternativo**
@@ -153,3 +153,4 @@
 8. O usuário corrige os dados incorretos, clica em enviar.
 9. O programa reconhece novamente os dados, e então o direciona para a página principal caso estejam corretos, se não, repete o processo.
 
+ ![Diagrama de Casos de Uso](Alternativo-login.jpg)
