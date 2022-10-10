@@ -33,7 +33,8 @@
 2. O cliente irá inserir os dados no formulário (nome, e-mail e senha).
 3. O cliente irá enviar os dados para o sistema clicando no botão "Enviar".
 4. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!". 
-5.![image](https://user-images.githubusercontent.com/111150590/194647708-08aa710e-9b96-4f57-aae3-9ebffef0d125.png)
+
+[Diagrama de Casos de Uso] ![image](.png)
 
 
 **Fluxo Alternativo**
