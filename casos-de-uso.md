@@ -34,7 +34,7 @@
 3. O cliente irá enviar os dados para o sistema clicando no botão "Enviar".
 4. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!". 
 
-[Diagrama de Casos de Uso] ![image](.png)
+[Diagrama de Casos de Uso] ![image](Fluxo-principal-Cliente.png)
 
 
 **Fluxo Alternativo**
