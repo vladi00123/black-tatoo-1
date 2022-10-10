@@ -7,8 +7,9 @@
  - [CDU 03](#CDU-03): Listar clientes cadastrados;
  - [CDU 04](#CDU-04): Visualizar agendamento;
  - [CDU 05](#CDU-05): Cancelar agendamento;
- - [CDU 06](#CDU-06): Listar clientes.
- - [CDU 07](#CDU-07): Excluir cliente.
+ - [CDU 06](#CDU-06): Listar clientes;
+ - [CDU 07](#CDU-07): Excluir cliente;
+ - [CDU 08](#CDU-08): Login;
 
  
 ## Lista dos Atores
@@ -124,3 +125,27 @@
 2. Dentro da página "Clientes" terá o botão "excluir". 
 3. O administrador clicará no botão "excluir" e uma mensagem de "Gostaria de excluir esse cliente?" será exibida.
 4. O administrador clicará em "não" e não excluirá o cliente. 
+
+### CDU 08 Login
+
+**Fluxo Principal**
+
+1. O sistema exibe a página inicial do programa.
+2. O cliente clica em "Login"
+3. O cliente terá que preencher os campos de email e senha.
+4. O cliente apertará em "Enviar".
+5. O cliente estará logado no sistema.
+
+
+**Fluxo Alternativo**
+
+1. O sistema exibirá a página inicial do programa.
+2. O cliente clica em "Login".
+3. O cliente será redirecionado para a página de login.
+4. Será exibido os campos de email e senha.
+5. Cliente entra com email e senha.
+6. O sistema exibirá uma mensagem de "email inválido".
+7. O cliente digita o email corretamente.
+8. O cliente entra com a senha.
+9. O cliente clica em "enviar".
+10. O cliente está logado ao sistema.
