@@ -139,7 +139,7 @@
 7. O sistema verifica as informações fornecidas pelo usuário.
 8. O cliente está logado ao sistema.
  
- [Diagrama de Casos de Uso]![image](Principal-login.jpg)
+ ![Diagrama de Casos de Uso]![image](Principal-login.jpg)
 
 **Fluxo Alternativo**
 
