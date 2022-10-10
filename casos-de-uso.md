@@ -130,11 +130,14 @@
 
 **Fluxo Principal**
 
-1. O sistema exibe a página inicial do programa.
-2. O cliente clica em "Login"
-3. O cliente terá que preencher os campos de email e senha.
-4. O cliente apertará em "Enviar".
-5. O cliente estará logado no sistema.
+1. O sistema exibirá a página inicial do programa.
+2. O cliente clica em "Login".
+3. O cliente será redirecionado para a página de login.
+4. Será exibido os campos de email e senha.
+5. Cliente entra com email e senha.
+6. O cliente clica em "enviar".
+7. O cliente está logado ao sistema.
+
 
 
 **Fluxo Alternativo**
@@ -144,8 +147,9 @@
 3. O cliente será redirecionado para a página de login.
 4. Será exibido os campos de email e senha.
 5. Cliente entra com email e senha.
-6. O sistema exibirá uma mensagem de "email inválido".
-7. O cliente digita o email corretamente.
-8. O cliente entra com a senha.
-9. O cliente clica em "enviar".
-10. O cliente está logado ao sistema.
+6. O cliente clica em "enviar".
+7. O sistema exibirá uma mensagem de "email inválido".
+8. O cliente digita o email corretamente.
+9. O cliente entra com a senha.
+10. O cliente clica em "enviar".
+11. O cliente está logado ao sistema.
