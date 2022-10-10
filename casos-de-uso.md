@@ -136,7 +136,8 @@
 4. Será exibido os campos de email e senha.
 5. Cliente entra com email e senha.
 6. O cliente clica em "enviar".
-7. O cliente está logado ao sistema.
+7. O sistema verifica as informações fornecidas pelo usuário.
+8. O cliente está logado ao sistema.
 
 
 
@@ -147,9 +148,8 @@
 3. O cliente será redirecionado para a página de login.
 4. Será exibido os campos de email e senha.
 5. Cliente entra com email e senha.
-6. O cliente clica em "enviar".
-7. O sistema exibirá uma mensagem de "email inválido".
-8. O cliente digita o email corretamente.
-9. O cliente entra com a senha.
-10. O cliente clica em "enviar".
-11. O cliente está logado ao sistema.
+6. O cliente em "enviar".
+7. O sistema verifica as informações fornecidas pelo usuário, e então retorna "email inválido" ou "senha inválida" caso não reconheça os dados inseridos.
+8. O usuário corrige os dados incorretos, clica em enviar.
+9. O programa reconhece novamente os dados, e então o direciona para a página principal caso estejam corretos, se não, repete o processo.
+
