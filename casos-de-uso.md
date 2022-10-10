@@ -3,13 +3,14 @@
 ## Lista dos Casos de Uso
 
  - [CDU 01](#CDU-01): Cadastrar cliente;
- - [CDU 02](#CDU-02): Marcar agendamento;
+ - [CDU 02](#CDU-02): Cadastro de Serviço;
  - [CDU 03](#CDU-03): Listar clientes cadastrados;
  - [CDU 04](#CDU-04): Visualizar agendamento;
  - [CDU 05](#CDU-05): Cancelar agendamento;
- - [CDU 06](#CDU-06): Listar clientes;
- - [CDU 07](#CDU-07): Excluir cliente;
- - [CDU 08](#CDU-08): Login;
+ - [CDU 06](#CDU-06): Excluir cliente;
+ - [CDU 07](#CDU-07): Login;
+ - [CDU 08](#CDU-08): Adição de Funcionário;
+ 
 
  
 ## Lista dos Atores
@@ -48,18 +49,18 @@
 7. O cliente clica em "Enviar".
 8. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!".
  [Diagrama de Casos de Uso] ![image](Fluxo-alternativo-cliente.png)
- ### CDU 02 Marcar agendamento  
+ ### CDU 02 Cadastro de Serviço
 
  **Fluxo Principal**
 
-1. O sistema exibirá os horários e os profissionais disponíveis.
+1. O sistema exibirá os horários e os profissionais cadastrados na região do cliente.
 2. O cliente irá escolher o horário e profissional de sua preferência. 
 3. O cliente irá cilcar em "Agendar".
 4. O cliente será redirecionado para outra página com o aviso "Agendamento efetuado!". 
 
 **Fluxo Alternativo**
 
-1. O sistema exibirá os horários e os profissionais.
+1. O sistema exibirá os horários e os profissionais cadastrados na região do cliente.
 2. O cliente irá escolher o horário e profissional de sua preferência. 
 3. O cliente irá clicar em "Agendar".
 4. O sistema informará que o profissional não está disponivel.
@@ -101,14 +102,6 @@
 2. Dentro da página "agendamentos" cada agendamento que ainda não teve seu serviço prestado terá o botão "cancelar". 
 3. O administrador clicará no botão "cancelar" e uma mensagem "Gostaria de cancelar esse agendamendo?" será exibida.
 4. O administrador clicará em "sim" e a mensagem "cancelamento feito com sucesso!!"
-
-### CDU 06 Listar cliente
-
-**Fluxo principal**
-
-1. 
-
-
 
 ### CDU 07 Excluir cliente 
 
@@ -154,3 +147,12 @@
 9. O programa reconhece novamente os dados, e então o direciona para a página principal caso estejam corretos, se não, repete o processo.
 
  ![Diagrama de Casos de Uso](Alternativo-login.jpg)
+ 
+ ### CDU 09 Adição de funcionários 
+
+**Fluxo principal** 
+
+1. No sistema existirá uma página de controle para os administradores. 
+2. O administrador terá acesso a todos os perfis de clientes que se cadastraram. 
+3. O administrador terá que cadastrar seu funcionário no sistema. 
+4. Após cadastrado, o funcionário terá acesso ao sistema através de seu email e senha.
