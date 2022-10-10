@@ -138,8 +138,8 @@
 6. O cliente clica em "enviar".
 7. O sistema verifica as informações fornecidas pelo usuário.
 8. O cliente está logado ao sistema.
-
-
+ 
+ [Diagrama de Casos de Uso](Principal-login.jpg)
 
 **Fluxo Alternativo**
 
