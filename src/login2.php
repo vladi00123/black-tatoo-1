@@ -1,57 +1,87 @@
 <?php
-            include "conexao.php";
+    // Recebe os campos do formulário
+    $email = $_POST["email"];
+    $senha = $_POST["senha"];
+
+    // Realiza a consulta no banco de dados
+    include "conexao.php";
+    $sql = "SELECT * FROM administrador WHERE email = '$email';";
+    $res = mysqli_query($mysqli, $sql);
+
+     //testa se não encontrou o e-mail
+     if(mysqli_num_rows($res) != 1){
+        echo "E-mail inválido!";
+        echo "<p><a href='login.html'>Página de login</a></p>";
+    }
+    else{
+        $adminnistrador = mysqli_fetch_array($res);
+        // testa se a senha está errada 
+
+        if($senha != $adminnistrador["senha"]){
+            echo "Senha inválida!";
+            echo "<p><a href='login.php'>Página de login</a></p>";
+        }
+        else{
+            // Abre a sessão e registra as variáveis do login
             session_start();
+            $_SESSION["email"] = $email;
+            $_SESSION["senha"] = $senha;
+            // direciona para a página inicial
+            header("Location: form_extra.php");
+        }
+    }
+    $sql = "SELECT * FROM funcionario WHERE email = '$email';";
+    $res = mysqli_query($mysqli, $sql);
 
-            $email = $_POST["email"];
-            $senha = $_POST["senha"];
+     //testa se não encontrou o e-mail
+     if(mysqli_num_rows($res) != 1){
+        echo "E-mail inválido!";
+        echo "<p><a href='login.html'>Página de login</a></p>";
+    }
+    else{
+        $funcionario = mysqli_fetch_array($res);
+        // testa se a senha está errada 
 
-            $sql1 = "SELECT * FROM usuario WHERE email = '$email' AND senha= '$senha';";
-            $res1 = mysqli_query($mysqli, $sql1);
-
-            if(mysqli_num_rows($res1) == 1){
-                echo"piruzin";
+        if($senha != $funcionario["senha"]){
+            echo "Senha inválida!";
+            echo "<p><a href='login.php'>Página de login</a></p>";
+        }
+        else{
+            // Abre a sessão e registra as variáveis do login
             session_start();
-            $_SESSION['id'] = $usuario ['id'];
-            $_SESSION['email'] = $usuario ['email'];
-            $_SESSION['senha'] = $usuario ['senha'];
-            header("location: cliente.php");
-            }
-            else{
-                echo '<script type ="text/JavaScript">';  
-                echo 'alert("Nome de usuário ou senha incorretos")';  
-                echo '</script>';
-                }
+            $_SESSION["email"] = $email;
+            $_SESSION["senha"] = $senha;
+            // direciona para a página inicial
+            header("Location: funcionario.php");
+        }
+    }
 
-            $sql2 = "SELECT * FROM funcionario WHERE email = '$email' AND senha= '$senha';";
-            $res2 = mysqli_query($mysqli, $sql2);
 
-            if(mysqli_num_rows($res3) == 1){
-                session_start();
-                $_SESSION['id'] = $funcionario ['id'];
-                $_SESSION['email'] = $funcionario ['email'];
-                $_SESSION['senha'] = $funcionario ['senha'];
-                header("location: funcionario.php");
-            }
-            else{
-            echo '<script type ="text/JavaScript">';  
-            echo 'alert("Nome de usuário ou senha incorretos")';  
-            echo '</script>';
-            }
+    
+    $sql = "SELECT * FROM cliente WHERE email = '$email';";
+    $res = mysqli_query($mysqli, $sql);
+    
 
-            $sql3 = "SELECT * FROM administrador WHERE email = '$email' AND senha= '$senha';";
-            $res3 = mysqli_query($mysqli, $sql3);
+    //testa se não encontrou o e-mail
+    if(mysqli_num_rows($res) != 1){
+        echo "E-mail inválido!";
+        echo "<p><a href='login.php'>Página de login</a></p>";
+    }
+    else{
+        $cliente = mysqli_fetch_array($res);
+        // testa se a senha está errada 
 
-            
-            if(mysqli_num_rows($res2) == 1){ 
-                session_start();
-                $_SESSION['id'] = $administrador ['id'];
-                $_SESSION['email'] = $administrador ['email'];
-                $_SESSION['senha'] = $administrador ['senha'];
-                header("location: administrador.php");
-                }
-                else{
-                    echo '<script type ="text/JavaScript">';  
-                    echo 'alert("Nome de usuário ou senha incorretos")';  
-                    echo '</script>';
-            }
+        if($senha != $cliente["senha"]){
+            echo "Senha inválida!";
+            echo "<p><a href='login.php'>Página de login</a></p>";
+        }
+        else{
+            // Abre a sessão e registra as variáveis do login
+            session_start();
+            $_SESSION["email"] = $email;
+            $_SESSION["senha"] = $senha;
+            // direciona para a página inicial
+            header("Location: cliente.php");
+        }
+    }
 ?>

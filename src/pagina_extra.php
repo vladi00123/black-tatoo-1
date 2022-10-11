@@ -1,4 +1,5 @@
-<?php include "conexao.php"; 
+<?php 
+        include "conexao.php";
 ?>
 <html>
     <head>
@@ -134,6 +135,18 @@
         echo "Cliente excluído com sucesso!<br>";
         echo "<a href='form_extra.html'>Voltar para o início</a>";
     }
+    else if($operacao == "servicos"){
+        $nome = $_POST["nome"]; 
+        $preco = $_POST["preco"];
+        
+        $sql = "INSERT INTO servicos (nome,preco) VALUES ('$nome','$preco');";  
+        mysqli_query($mysqli,$sql);
+
+            echo '<script type ="text/JavaScript">';  
+            echo 'alert("Serviço cadastrado com sucesso")';  
+            echo '</script>';
+        }
+    
 ?>
     </body>
 </html>

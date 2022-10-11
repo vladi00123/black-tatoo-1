@@ -28,5 +28,14 @@
             <p>Nome: <input type="text" name="nome" size="10"></p>
             <p><input type="submit" value="Buscar"></p>
         </form>
+
+        <h1>Cadastro de serviços</h1>
+        <form action="pagina_extra.php" method="POST">
+            <input type="hidden" name="operacao" value="servicos">
+            <p>Nome: <input type="text" name="nome" size="10"></p>
+            <p>Preço: <input type="text" name="preco" size="10"></p>
+            <a href="listaservicos.php">lista de serviços</a>
+            <p><input type="submit" value="cadastar serviços"></p>
+        </form>
     </body>    
 </html>
