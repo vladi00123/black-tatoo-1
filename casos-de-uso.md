@@ -160,4 +160,7 @@
 4. Após cadastrado, o funcionário terá acesso ao sistema através de seu email e senha.
 ![Diagrama de Casos de Uso](Fluxo-principal-funcionario.png)
 
+**Fluxo Alternativo**
+
+![Diagrama de Casos de Uso]fluxo-alternativo-funcionario.png
 
