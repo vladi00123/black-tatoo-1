@@ -57,7 +57,7 @@
 2. O cliente irá escolher o horário e profissional de sua preferência. 
 3. O cliente irá cilcar em "Agendar".
 4. O cliente será redirecionado para outra página com o aviso "Agendamento efetuado!". 
-![Diagrama de Casos de Uso](Fluxo-Principal-de-Serviços.jpg)
+![Diagrama de Casos de Uso](Fluxo-Principal-de-Serviço.jpg)
 
 **Fluxo Alternativo**
 
