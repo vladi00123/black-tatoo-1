@@ -162,5 +162,5 @@
 
 **Fluxo Alternativo**
 
-![Diagrama de Casos de Uso]fluxo-alternativo-funcionario.png
+![Diagrama de Casos de Uso](fluxo-alternativo-funcionario.png)
 
