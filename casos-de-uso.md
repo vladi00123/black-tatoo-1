@@ -57,6 +57,7 @@
 2. O cliente irá escolher o horário e profissional de sua preferência. 
 3. O cliente irá cilcar em "Agendar".
 4. O cliente será redirecionado para outra página com o aviso "Agendamento efetuado!". 
+![Diagrama de Casos de Uso](Fluxo-Principal-de-Serviço.jpg)
 
 **Fluxo Alternativo**
 
@@ -67,6 +68,7 @@
 5. O cliente escolherá outro profissional.
 6. O cliente irá clicar em "Agendar".
 7. O cliente será redirecionado para outra página com o aviso "Agendamento efetuado!". 
+ ![Diagrama de Casos de Uso](Fluxo-Alternativo-de-Serviços.jpg)
 
 ### CDU 03 Listar clientes cadastrados
 
