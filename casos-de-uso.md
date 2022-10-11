@@ -158,3 +158,6 @@
 2. O administrador terá acesso a todos os perfis de clientes que se cadastraram. 
 3. O administrador terá que cadastrar seu funcionário no sistema. 
 4. Após cadastrado, o funcionário terá acesso ao sistema através de seu email e senha.
+![Diagrama de Casos de Uso](Fluxo-principal-funcionario.png)
+
+
