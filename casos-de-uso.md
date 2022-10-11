@@ -48,7 +48,7 @@
 6. O cliente digitará corretamente email e senha.
 7. O cliente clica em "Enviar".
 8. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!".
- [Diagrama de Casos de Uso] ![image](Fluxo-alternativo-cliente.png)
+ ![Diagrama de Casos de Uso](Fluxo-alternativo-cliente.png)
  ### CDU 02 Cadastro de Serviço
 
  **Fluxo Principal**
