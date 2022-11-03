@@ -86,6 +86,7 @@ input{
 .inputSubmit:hover{
     background-color: white;
     cursor: pointer;
+    color : black;
 }
 .btm {
     background-color: black;

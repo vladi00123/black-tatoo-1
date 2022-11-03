@@ -1,19 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11-Out-2022 às 01:01
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 7.4.29
-
-CREATE DATABASE IF NOT EXISTS blacktatoo DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE blacktatoo;
-DROP USER IF EXISTS 'tatoo'@'localhost';
-CREATE USER 'tatoo'@'localhost' IDENTIFIED BY '123';
-GRANT ALL PRIVILEGES ON blacktatoo.* TO 'tatoo'@'localhost';
+-- Generation Time: 03-Nov-2022 às 20:51
+-- Versão do servidor: 5.7.17
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `blacktatoo`
+-- Database: `blacktatoo`
 --
 
 -- --------------------------------------------------------
@@ -32,14 +27,22 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `administrador`
 --
-DROP TABLE IF EXISTS `administrador`;
+
 CREATE TABLE `administrador` (
-  `nome` int(11) NOT NULL,
-  `senha` int(11) NOT NULL,
-  `email` int(11) NOT NULL,
-  `data_nasc` int(11) NOT NULL,
-  `id` int(11) NOT NULL
+  `nome` varchar(50) NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `data_nasc` varchar(50) NOT NULL,
+  `id` int(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `administrador`
+--
+
+INSERT INTO `administrador` (`nome`, `senha`, `email`, `data_nasc`, `id`) VALUES
+('0', '99513261', '0', '0', 1),
+('vladimir', '99513261', 'admin@admin.com', '18-11-2002', 1);
 
 -- --------------------------------------------------------
 
@@ -47,7 +50,6 @@ CREATE TABLE `administrador` (
 -- Estrutura da tabela `cliente`
 --
 
-DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE `cliente` (
   `cod_cliente` int(11) NOT NULL,
   `nome` varchar(30) NOT NULL,
@@ -60,7 +62,7 @@ CREATE TABLE `cliente` (
 -- Extraindo dados da tabela `cliente`
 --
 
-INSERT DELAYED IGNORE INTO `cliente` (`cod_cliente`, `nome`, `email`, `data_nasc`, `senha`) VALUES
+INSERT INTO `cliente` (`cod_cliente`, `nome`, `email`, `data_nasc`, `senha`) VALUES
 (2, 'vladimir pinho andrade dos san', 'vladimir.pinho@gmail.com', '2001-11-18', '123456');
 
 -- --------------------------------------------------------
@@ -69,7 +71,6 @@ INSERT DELAYED IGNORE INTO `cliente` (`cod_cliente`, `nome`, `email`, `data_nasc
 -- Estrutura da tabela `funcionario`
 --
 
-DROP TABLE IF EXISTS `funcionario`;
 CREATE TABLE `funcionario` (
   `nome` int(11) NOT NULL,
   `senha` varchar(15) NOT NULL,
@@ -81,25 +82,24 @@ CREATE TABLE `funcionario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `cliente`
+-- Indexes for table `cliente`
 --
 ALTER TABLE `cliente`
   ADD PRIMARY KEY (`cod_cliente`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `cliente`
+-- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `cod_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
+  MODIFY `cod_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
