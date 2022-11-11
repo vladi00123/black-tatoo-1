@@ -16,8 +16,7 @@
     else{
         $adminnistrador = mysqli_fetch_array($res);
         // testa se a senha está errada 
-        if(!password_verify($senha, $cliente['senha']))
-        if($senha != $adminnistrador["senha"]){
+        if(!password_verify($senha, $adminnistrador['senha'])){
             echo "Senha inválida!";
             echo "<p><a href='login.php'>Página de login</a></p>";
         }
@@ -41,7 +40,7 @@
     else{
         $funcionario = mysqli_fetch_array($res);
         // testa se a senha está errada 
-        if(!password_verify($senha, $cliente['senha']))
+        if(!password_verify($senha, $funcionario['senha']))
         if($senha != $funcionario["senha"]){
             echo "Senha inválida!";
             echo "<p><a href='login.php'>Página de login</a></p>";

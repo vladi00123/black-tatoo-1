@@ -20,6 +20,8 @@
 
         $erro = 0;
 
+        
+
         if(empty($nome) or strstr($nome, ' ') == false){
             echo "Por favor, preencha o nome completo.<br>";
             $erro = 1;
@@ -54,15 +56,21 @@
             $erro = 1;
         }
 
+        
         if($erro == 0){
             $senha_cript = password_hash($senha, PASSWORD_DEFAULT);
             $sql = "INSERT INTO cliente (nome,email,senha,data_nasc)";
-            $sql .= "VALUES ('$nome','$email','$senha','$senha_crip',$data_nasc');";  
-            mysqli_query($mysqli,$sql);
+            $sql .= "VALUES ('$nome','$email','$senha','$senha_cript',$data_nasc');";  
+            
+            if (!mysqli_query($mysqli,$sql))
+            {
+                echo("Errorcode: " . mysqli_errno($mysqli));
+            }
 
             echo "Nome: $nome <br>";
             echo "E-mail: $email <br>";
             echo "Data de nascimento: $data_nasc <br>";
+            
             header ("location:cliente.php");
         }
     }

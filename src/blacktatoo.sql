@@ -6,6 +6,13 @@
 -- Generation Time: 03-Nov-2022 às 20:51
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
+CREATE DATABASE IF NOT EXISTS blacktatoo DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE blacktatoo;
+DROP USER IF EXISTS 'tatoo'@'localhost';
+CREATE USER 'tatoo'@'localhost' IDENTIFIED BY '123';
+GRANT ALL PRIVILEGES ON blacktatoo.* TO 'tatoo'@'localhost';
+
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -27,7 +34,7 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `administrador`
 --
-
+DROP TABLE IF EXISTS `administrador`;
 CREATE TABLE `administrador` (
   `nome` varchar(50) NOT NULL,
   `senha` varchar(50) NOT NULL,
@@ -42,7 +49,7 @@ CREATE TABLE `administrador` (
 
 INSERT INTO `administrador` (`nome`, `senha`, `email`, `data_nasc`, `id`) VALUES
 ('0', '99513261', '0', '0', 1),
-('vladimir', '99513261', 'admin@admin.com', '18-11-2002', 1);
+('vladimir', '$2y$10$sfcaHHjt.lf3TTAGDUhWEOjX9ezCna4gXTov1LsqxV00tqYlaew2K', 'admin@admin.com', '18-11-2002', 1);
 
 -- --------------------------------------------------------
 
@@ -50,7 +57,7 @@ INSERT INTO `administrador` (`nome`, `senha`, `email`, `data_nasc`, `id`) VALUES
 -- Estrutura da tabela `cliente`
 --
 
-CREATE TABLE `cliente` (
+CREATE TABLE  `cliente` (
   `cod_cliente` int(11) NOT NULL,
   `nome` varchar(30) NOT NULL,
   `email` varchar(30) NOT NULL,
@@ -71,7 +78,7 @@ INSERT INTO `cliente` (`cod_cliente`, `nome`, `email`, `data_nasc`, `senha`) VAL
 -- Estrutura da tabela `funcionario`
 --
 
-CREATE TABLE `funcionario` (
+CREATE TABLE  `funcionario` (
   `nome` int(11) NOT NULL,
   `senha` varchar(15) NOT NULL,
   `email` varchar(30) NOT NULL,
