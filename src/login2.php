@@ -8,16 +8,11 @@
     $sql = "SELECT * FROM administrador WHERE email = '$email';";
     $res = mysqli_query($mysqli, $sql);
 
-     //testa se não encontrou o e-mail
-     if(mysqli_num_rows($res) != 1){
-        echo "E-mail inválido!";
-        echo "<p><a href='login.html'>Página de login</a></p>";
-    }
-    else{
+    if(mysqli_num_rows($res) >= 1){
         $adminnistrador = mysqli_fetch_array($res);
         // testa se a senha está errada 
         if(!password_verify($senha, $adminnistrador['senha'])){
-            echo "Senha inválida!";
+            echo "Senha de adiministrador não encontrada!";
             echo "<p><a href='login.php'>Página de login</a></p>";
         }
         else{
@@ -29,20 +24,18 @@
             header("Location: form_extra.php");
         }
     }
+    else{
+        $adm = 0;
+    }
     $sql = "SELECT * FROM funcionario WHERE email = '$email';";
     $res = mysqli_query($mysqli, $sql);
 
-     //testa se não encontrou o e-mail
-     if(mysqli_num_rows($res) != 1){
-        echo "E-mail inválido!";
-        echo "<p><a href='login.html'>Página de login</a></p>";
-    }
-    else{
+    if(mysqli_num_rows($res) >= 1){
         $funcionario = mysqli_fetch_array($res);
         // testa se a senha está errada 
         if(!password_verify($senha, $funcionario['senha']))
         if($senha != $funcionario["senha"]){
-            echo "Senha inválida!";
+            echo "Senha de funcionario não encontrada!";
             echo "<p><a href='login.php'>Página de login</a></p>";
         }
         else{
@@ -52,27 +45,21 @@
             $_SESSION["senha"] = $senha;
             // direciona para a página inicial
             header("Location: funcionario.php");
-        }
-    }
-
-
-    
-    $sql = "SELECT * FROM cliente WHERE email = '$email';";
-    $res = mysqli_query($mysqli, $sql);
-    
-
-    //testa se não encontrou o e-mail
-    if(mysqli_num_rows($res) != 1){
-        echo "E-mail inválido!";
-        echo "<p><a href='login.php'>Página de login</a></p>";
+        }        
     }
     else{
+        $adm = 1;
+    }
+    $sql = "SELECT * FROM cliente WHERE email = '$email';";
+    $res = mysqli_query($mysqli, $sql);
+
+    if(mysqli_num_rows($res) >= 1){
         $cliente = mysqli_fetch_array($res);
         // testa se a senha está errada 
 
         if(!password_verify($senha, $cliente['senha']))
         if($senha != $cliente["senha"]){
-            echo "Senha inválida!";
+            echo "Senha do cliente não encontrada!";
             echo "<p><a href='login.php'>Página de login</a></p>";
         }
         else{
@@ -83,5 +70,12 @@
             // direciona para a página inicial
             header("Location: cliente.php");
         }
+    }
+    else{
+        $adm = 2;
+    }
+    if ($adm == 2){
+        echo "Não encontramos o email digitado :(";
+        echo "<p><a href='login.php'>Página de login</a></p>";
     }
 ?>
