@@ -60,18 +60,15 @@
         if($erro == 0){
             $senha_cript = password_hash($senha, PASSWORD_DEFAULT);
             $sql = "INSERT INTO cliente (nome,email,senha,data_nasc)";
-            $sql .= "VALUES ('$nome','$email','$senha','$senha_cript',$data_nasc');";  
+            $sql .= "VALUES ('$nome','$email','$senha_cript','$data_nasc');";  
             
-            if (!mysqli_query($mysqli,$sql))
-            {
-                echo("Errorcode: " . mysqli_errno($mysqli));
-            }
+            mysqli_query($mysqli,$sql);
 
             echo "Nome: $nome <br>";
             echo "E-mail: $email <br>";
             echo "Data de nascimento: $data_nasc <br>";
             
-            header ("location:cliente.php");
+            header ("refresh:5;location:cliente.php");
         }
     }
     else if($operacao == "exibir"){
