@@ -168,5 +168,15 @@
  
   ### CDU 09 Disponibilização de horários
 
-**Fluxo principal** 
+**Fluxo principal**  
+1. O administrador selecionará serviços
+2. O sistema exibirá ao administrador a lista de serviços
+3. O administrador selecionará data e horários disponíveis 
+4. O sistema confirmará data e horário
 
+
+**Fluxo Alternativo** 
+1. O administrador selecionará serviços
+2. O sistema exibirá ao administrador a lista de serviços
+3. O administrador selecionará a mesma data e horário   
+4. O sistema exibirá que não é possível salvar agendamentos
