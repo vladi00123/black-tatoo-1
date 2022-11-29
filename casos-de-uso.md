@@ -10,6 +10,7 @@
  - [CDU 06](#CDU-06): Excluir cliente;
  - [CDU 07](#CDU-07): Login;
  - [CDU 08](#CDU-08): Adição de Funcionário;
+ - [CDU 09](#CDU-09): Disponibilização de horários;
  
 
  
@@ -49,7 +50,8 @@
 7. O cliente clica em "Enviar".
 8. O cliente será redirecionado para outra página com o aviso "Cadastro efetuado!".
  ![Diagrama de Casos de Uso](Fluxo-alternativo-cliente.png)
- ### CDU 02 Cadastro de Serviço
+ 
+### CDU 02 Cadastro de Serviço
 
  **Fluxo Principal**
 
@@ -105,7 +107,7 @@
 3. O administrador clicará no botão "cancelar" e uma mensagem "Gostaria de cancelar esse agendamendo?" será exibida.
 4. O administrador clicará em "sim" e a mensagem "cancelamento feito com sucesso!!"
 
-### CDU 07 Excluir cliente 
+### CDU 06 Excluir cliente 
 
 **Fluxo principal**
 
@@ -121,7 +123,7 @@
 3. O administrador clicará no botão "excluir" e uma mensagem de "Gostaria de excluir esse cliente?" será exibida.
 4. O administrador clicará em "não" e não excluirá o cliente. 
 
-### CDU 08 Login
+### CDU 07 Login
 
 **Fluxo Principal**
 
@@ -150,7 +152,7 @@
 
  ![Diagrama de Casos de Uso](Alternativo-login.jpg)
  
- ### CDU 09 Adição de funcionários 
+ ### CDU 08 Adição de funcionários 
 
 **Fluxo principal** 
 
@@ -163,4 +165,6 @@
 **Fluxo Alternativo**
 
 ![Diagrama de Casos de Uso](fluxo-alternativo-funcionario.png)
+ 
+  ### CDU 09 Disponibilização de horários
 
