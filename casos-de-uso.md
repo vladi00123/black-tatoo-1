@@ -188,14 +188,18 @@
  ### CDU 10 **Agendamento**
  
 **Fluxo principal**
-1. O administrador selecionará serviços
-2. O sistema busca agendamento
-3. O sistema exibirá data e horário 
-4. O sistema confirmará agendamento
+1. O cliente selecionará serviços para escolher data e horário 
+2. O sistema confirmará o agendamento
+3. O sistema exibirá "agendamento cadastrado"
+4. O sistema recarrega para página inicial
 
 
 **Fluxo Alternativo**  
-1. O administrador selecionará serviços
-2. O sistema busca agendamento
-3. O sistema exibirá data e horário 
-4. O sistema exibirá que não é possível agendar 
+1. O cliente selecionará serviços para escolher data e horário 
+2. O sistema confirmará o agendamento
+3. O sistema exibirá "agendamento indisponível"
+4. O sistema recarrega a página inicial
+5. O cliente refaz o agendamento 
+6. O cliente escolhe nova data e horário
+7. O sistema exibirá "agendamento cadastrado"
+8. O sistema recarrega para página inicial
