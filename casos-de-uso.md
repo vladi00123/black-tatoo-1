@@ -11,6 +11,7 @@
  - [CDU 07](#CDU-07): Login;
  - [CDU 08](#CDU-08): Adição de Funcionário;
  - [CDU 09](#CDU-09): Disponibilização de horários;
+ - [CDU 10](#CDU-10): Agendamento;
  
 
  
@@ -183,3 +184,18 @@
 4. O sistema exibirá que não é possível salvar agendamentos antigos.
 
 ![Diagrama de Casos de Uso](horarios-alternativo.jpg)
+
+ ### CDU 10 **Agendamento**
+ 
+**Fluxo principal**
+1. O administrador selecionará serviços
+2. O sistema busca agendamento
+3. O sistema exibirá data e horário 
+4. O sistema confirmará agendamento
+
+
+**Fluxo Alternativo**  
+1. O administrador selecionará serviços
+2. O sistema busca agendamento
+3. O sistema exibirá data e horário 
+4. O sistema exibirá que não é possível agendar 
