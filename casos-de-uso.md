@@ -193,6 +193,8 @@
 3. O sistema exibirá "agendamento cadastrado"
 4. O sistema recarrega para página inicial
 
+![Diagrama de Casos de Uso](https://user-images.githubusercontent.com/111150590/206540486-e50815f2-3cf1-4da1-816f-fb7e48fcd89b.jpg)
+
 
 **Fluxo Alternativo**  
 1. O cliente selecionará serviços para escolher data e horário 
@@ -203,3 +205,11 @@
 6. O cliente escolhe nova data e horário
 7. O sistema exibirá "agendamento cadastrado"
 8. O sistema recarrega para página inicial
+
+![Diagrama de Casos de Uso](https://user-images.githubusercontent.com/111150590/206540182-09c09f74-6f4b-4525-8dad-1d68a81aba01.jpg)
+
+
+
+
+
+
