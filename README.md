@@ -11,7 +11,7 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
  O Projeto é um programa de agendamento de um estúdio de tatuagem.
 
-O programa tem como objetivo agendar
+O programa tem como objetivo agendar clientes para fazer tatuagens, os clientes poderão visualizar a galeria do site e escolher as artes de sua preferencia.
 
 ## Documentação
 
