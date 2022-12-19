@@ -1,4 +1,5 @@
 <?php
+include "conexao.php";
 include "gerars.php";
 
 $email = $_POST["email"];
