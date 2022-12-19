@@ -67,6 +67,8 @@
             echo "Nome: $nome <br>";
             echo "E-mail: $email <br>";
             echo "Data de nascimento: $data_nasc <br>";
+            include "envia_email.php";
+            envia_email($email, "Criação de Usuário","EMAIL EMAIL EMAIL");
             
             header ("refresh:5;location:cliente.php");
         }

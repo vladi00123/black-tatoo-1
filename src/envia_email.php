@@ -1,13 +1,12 @@
 <?php
-include "exemplo_email.php"
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Inclui os arquivos da biblioteca PHPMailer necessários para o envio de e-mail
-require 'C:/Program Files (x86)/EasyPHP-Devserver-17/eds-www/PHPMailer-master/src/Exception.php';
-require 'C:/Program Files (x86)/EasyPHP-Devserver-17/eds-www/PHPMailer-master/src/PHPMailer.php';
-require 'C:/Program Files (x86)/EasyPHP-Devserver-17/eds-www/PHPMailer-master/src/SMTP.php';
+require 'C:/Program Files (x86)/EasyPHP-Devserver-17/eds-www/Blacktatoo/src/PHPMailer-master/src/Exception.php';
+require 'C:/Program Files (x86)/EasyPHP-Devserver-17/eds-www/Blacktatoo/src/PHPMailer-master/src/PHPMailer.php';
+require 'C:/Program Files (x86)/EasyPHP-Devserver-17/eds-www/Blacktatoo/src/PHPMailer-master/src/SMTP.php';
 
 function envia_email($para, $assunto, $mensagem){
 
@@ -26,7 +25,7 @@ function envia_email($para, $assunto, $mensagem){
         $mail->Port       = 465;                                    //Porta TCP de conexão; use 587 se você tiver configurado `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Remetente e Destinatários
-        $mail->setFrom('lp3.cp2.2021@gmail.com', 'Site do Professor');  // Adiciona o remetente
+        $mail->setFrom('blaquetatoo@gmail.com', 'Black Tatoo');  // Adiciona o remetente
         $mail->addAddress($para);                                       // Adiciona um destinatário
         // $mail->addAddress('ellen@example.com');                      // O nome é opcional
         // $mail->addReplyTo('info@example.com', 'Information');        // Adicona um endereço de resposta
@@ -41,6 +40,7 @@ function envia_email($para, $assunto, $mensagem){
         $mail->isHTML(true);                                    //Formata o e-mail com HTML
         $mail->Subject = $assunto;                              //Assunto do e-mail
         $mail->Body    = $mensagem;                             // Corpo do e-mail
+        $mail->Charset = "UTF-8";
         // $mail->AltBody = 'Texto sem tags HTML!';             //Opção de texto para provedores de e-mail que não lêem HTML.
 
         $mail->send();                                          // tenta enviar o e-mail

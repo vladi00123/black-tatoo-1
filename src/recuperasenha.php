@@ -33,7 +33,7 @@ mysqli_query($mysqli, $sql);
 mysqli_close($mysqli);
 
 include "envia_email.php";
-envia_email($email, "Recuperação de senha");
+envia_email($email, "Recuperação de senha", "EMAIL ENVIADO");
 
 echo "<a href='index.php'>Início</a>";
 }
