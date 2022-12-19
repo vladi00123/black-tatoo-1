@@ -110,6 +110,7 @@ input{
             <input type="password" name="senha" placeholder="Senha">
             <br><br>
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+            <a href="recuperasenha.php">Esqueceu a senha?</a>
         </form>
     </div>
 </body>

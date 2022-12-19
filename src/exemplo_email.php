@@ -4,7 +4,7 @@ include "envia_email.php";
 
 $nome = "Fulano de tal";
 $data = "10/11/2022";
-$email = "mimsay003@gmail.com";
+$email = "mimsay003@gmail.com";00
 
 $assunto = "Exemplo de e-mail pelo PHP";
 

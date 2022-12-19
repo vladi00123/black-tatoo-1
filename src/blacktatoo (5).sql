@@ -6,7 +6,11 @@
 -- Generation Time: 19-Dez-2022 às 18:10
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
-
+CREATE DATABASE IF NOT EXISTS blacktatoo DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE blacktatoo;
+DROP USER IF EXISTS 'tatoo'@'localhost';
+CREATE USER 'tatoo'@'localhost' IDENTIFIED BY '123';
+GRANT ALL PRIVILEGES ON blacktatoo.* TO 'tatoo'@'localhost';
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -27,7 +31,7 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `administrador`
 --
-
+DROP TABLE IF EXISTS `administrador`;
 CREATE TABLE `administrador` (
   `id` int(10) NOT NULL,
   `email` varchar(100) NOT NULL,
