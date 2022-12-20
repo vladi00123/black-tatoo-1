@@ -5,6 +5,8 @@
     <head>
         <title>Dados Cadastrados</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
     </head>
     <body>
         <h1>Dados Cadastrados</h1>
