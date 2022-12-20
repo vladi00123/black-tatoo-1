@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    color: white;
 }
 
 .box {
@@ -95,16 +96,18 @@ legend {
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
+    border-color: rgb(35, 96, 4);
+    ;
 }
 
 a {
     text-decoration: none;
-    color: white;
-    border: 3px solid dodgerblue;
+    color: rgb(35, 96, 4);
+    border: 3px solid rgb(23, 26, 30);
     border-radius: 10px;
     padding: 10px;
 }
 
 a:hover {
-    background-color: dodgerblue;
+    background-color: rgb(15, 18, 21);
 }
