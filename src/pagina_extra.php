@@ -5,10 +5,14 @@
     <head>
         <title>Dados Cadastrados</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
 
     </head>
     <body>
+
+    <?php include "header.php" ?>
+
         <h1>Dados Cadastrados</h1>
 <?php
     $operacao = $_REQUEST["operacao"];
@@ -19,7 +23,6 @@
         $senha = $_POST["senha"];
         $senha_rep = $_POST["senha_rep"];
         $data_nasc = $_POST["data_nascimento"];
-
         $erro = 0;
 
         
@@ -70,7 +73,7 @@
             echo "E-mail: $email <br>";
             echo "Data de nascimento: $data_nasc <br>";
             include "envia_email.php";
-            envia_email($email, "Criação de Usuário","EMAIL EMAIL EMAIL");
+            envia_email($email, "Criação de Usuário","Bem vindo a BLACK TATOO STUDIO, $nome");
             
             header ("refresh:5;location:cliente.php");
         }
