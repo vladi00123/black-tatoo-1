@@ -16,9 +16,16 @@ body {
     width: 20%;
 }
 
-.box .caixa {
+.caixa {
+    position: absolute;
     padding: 30px;
     border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-color: WHITE;
+}
+
+.caixa a {
+    color: aliceblue;
 }
 
 fieldset {
@@ -106,8 +113,11 @@ a {
     border: 3px solid rgb(23, 26, 30);
     border-radius: 10px;
     padding: 10px;
+    outline: none;
 }
 
 a:hover {
     background-color: rgb(15, 18, 21);
+    outline: none;
+    text-decoration: none;
 }
