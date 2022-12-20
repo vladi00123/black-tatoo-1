@@ -58,7 +58,7 @@
         // testa se a senha está errada 
 
         if(!password_verify($senha, $cliente['senha']))
-        if($senha != $cliente["senha"]){
+        {
             echo "Senha do cliente não encontrada!";
             echo "<p><a href='login.php'>Página de login</a></p>";
         }
