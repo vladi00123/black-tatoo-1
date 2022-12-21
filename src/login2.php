@@ -33,8 +33,7 @@
     if(mysqli_num_rows($res) >= 1){
         $funcionario = mysqli_fetch_array($res);
         // testa se a senha está errada 
-        if(!password_verify($senha, $funcionario['senha']))
-        if($senha != $funcionario["senha"]){
+        if(!password_verify($senha, $funcionario['senha'])){
             echo "Senha de funcionario não encontrada!";
             echo "<p><a href='login.php'>Página de login</a></p>";
         }

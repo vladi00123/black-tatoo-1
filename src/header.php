@@ -11,7 +11,7 @@
                     <a class="nav-link" href="#">Tatuagens</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Agendamento</a>
+                    <a class="nav-link" href="servicos.php">Agendamento</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sobre nós</a>

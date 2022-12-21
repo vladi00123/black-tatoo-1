@@ -1,7 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: white;
+    background: black;
 }
 
 .box {
@@ -16,19 +15,11 @@ body {
     width: 20%;
 }
 
-.caixa {
-    position: absolute;
-    padding: 30px;
-    border-radius: 10px;
-    transform: translate(-50%, -50%);
-    background-color: WHITE;
+fieldset {
+    border: 3px solid black;
 }
 
-.caixa a {
-    color: aliceblue;
-}
-
-.boxe {
+div {
     background-color: white;
     position: absolute;
     top: 50%;
@@ -37,10 +28,6 @@ body {
     padding: 80px;
     border-radius: 15px;
     color: black;
-}
-
-fieldset {
-    border: 3px solid black;
 }
 
 legend {
@@ -75,34 +62,27 @@ legend {
     transition: .5s;
 }
 
-.inputUser:focus~.labelInput,
-.inputUser:valid~.labelInput {
-    top: -20px;
-    font-size: 12px;
-    color: black;
-}
-
-#data_nascimento {
+input {
+    padding: 15px;
     border: none;
-    padding: 8px;
-    border-radius: 10px;
     outline: none;
     font-size: 15px;
 }
 
-#submit {
+.inputSubmit {
     background-color: black;
-    width: 100%;
     border: none;
     padding: 15px;
+    width: 100%;
+    border-radius: 10px;
     color: white;
     font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
 }
 
-#submit:hover {
-    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+.inputSubmit:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
 }
 
 .btm {
@@ -114,21 +94,4 @@ legend {
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
-    border-color: rgb(35, 96, 4);
-    ;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(35, 96, 4);
-    border: 3px solid rgb(23, 26, 30);
-    border-radius: 10px;
-    padding: 10px;
-    outline: none;
-}
-
-a:hover {
-    background-color: rgb(15, 18, 21);
-    outline: none;
-    text-decoration: none;
 }
