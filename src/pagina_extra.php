@@ -67,7 +67,10 @@
             $sql = "INSERT INTO cliente (nome,email,senha,data_nasc)";
             $sql .= "VALUES ('$nome','$email','$senha_cript','$data_nasc');";  
             
-            mysqli_query($mysqli,$sql);
+
+          if (!  mysqli_query($mysqli,$sql) ){
+            echo mysqli_error($mysqli);
+          }
 
             echo "Nome: $nome <br>";
             echo "E-mail: $email <br>";

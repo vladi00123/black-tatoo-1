@@ -4,7 +4,7 @@
     <?php
 include "conexao.php";
 $email = $_SESSION['email'];
-$sql = "SELECT * FROM funcionario WHERE email = '$email';";
+$sql = "SELECT * FROM funcionario WHERE email = '$email'";
 $res = mysqli_query($mysqli, $sql);
 $funcionario = mysqli_fetch_array($res);
 $cod = $funcionario['cod_cliente'];

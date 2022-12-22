@@ -14,7 +14,7 @@
                     <a class="nav-link" href="servicos.php">Agendamento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nós</a>
+                    <a class="nav-link" href="agendamento.php">Sobre nós</a>
                 </li>
 
             </ul>
