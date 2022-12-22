@@ -12,6 +12,8 @@
  - [CDU 08](#CDU-08): Adição de Funcionário;
  - [CDU 09](#CDU-09): Disponibilização de horários;
  - [CDU 10](#CDU-10): Agendamento;
+ - [CDU 11](#CDU-11): Sair do site;
+
  
 
  
@@ -208,6 +210,12 @@
 
 ![Diagrama de Casos de Uso](https://user-images.githubusercontent.com/111150590/206540182-09c09f74-6f4b-4525-8dad-1d68a81aba01.jpg)
 
+- [CDU 11](#CDU-11): Sair do site;
+1.  O cliente selecionará "Sair"
+2.  O sistema confirmará saída
+3.  O sistema recarrega para página inicial
+
+**Fluxo Alternativo** 
 
 
 
