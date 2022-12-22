@@ -217,6 +217,7 @@
 
 **Fluxo Alternativo** 
 
+![diag saída](https://user-images.githubusercontent.com/111150590/209192064-d4915585-b739-4101-a1d7-fde9376246f6.jpg)
 
 
 
